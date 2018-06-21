@@ -1,6 +1,16 @@
-# archive-scraper
-Scrape and download Archive.org files from the command line with Ruby
-archive-scraper
+# Archive.org File Scraper
+
+Scrape and download Archive.org files from the command line.
+
+Supply the ID of any collection, and save the URLs of downloable files in the collection to a text file.
+
+Use this terminal utility to download all of the files from the scraped links to the program's /downloads folder.
+
+On first time use, use the three features in order:
+
+1. Get the URLs of every item in a collection
+2. Crawl each item for download links of a particular extension (txt, zip)
+3. Download all files through the terminal
 
 ## Instructions
 
