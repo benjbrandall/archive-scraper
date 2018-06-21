@@ -86,8 +86,9 @@ end
 
 def main_application
 	puts "Select function: \n 1: Scrape a collection and add the item urls to targets.txt"
- 	puts "2: Download all files inside targets.txt (will be blank on first time use)"
-  	choice = gets.chomp
+ 	puts "2: Scrape links all files inside targets.txt (will be blank on first time use)"
+	puts "3: Bulk download from download_links.txt"  
+	choice = gets.chomp
   	case choice
   	when "1"
     		puts "Paste collection ID (e.g. bitsavers_mit):"
@@ -95,7 +96,6 @@ def main_application
     		extractor = LinkExtractor.new(id)
 		IO.write("targets.txt", extractor.links.join("\n"))
 		system('cat targets.txt')
-		main_application
  	 when "2"
 		puts "Which file extension should we scrape for? (ex: .txt, jp2.zip, .torrent)"
 	  	file_extension = gets.chomp
@@ -104,7 +104,9 @@ def main_application
       			scraper = Scraper.new(url_to_scrape.chomp,file_extension)
 		end
 
-	end
+	 when "3"
+		 download_prompt
+ 	 end
 end
 
 def download_prompt
