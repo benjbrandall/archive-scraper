@@ -24,5 +24,5 @@ When this is complete, you'll get the option to download the files to the progra
 
 ## Upcoming
 
-* ~~The ability to supply the scraper with the URL of an entire collection and then scrape deeper into the collection to grab files.
+* ~~The ability to supply the scraper with the URL of an entire collection and then scrape deeper into the collection to grab files.~~
 *  ~~The option to use wget as part of the program, drawing from an output file of download URLs created while scraping.~~
