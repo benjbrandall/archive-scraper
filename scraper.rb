@@ -119,5 +119,5 @@ def download_prompt
 end
 end
 
-#main_application
+main_application
 download_prompt
